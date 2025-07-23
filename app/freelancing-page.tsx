@@ -1,6 +1,12 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { Services} from "@/components/services"
 import { Search, Briefcase, Users, DollarSign } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "JobConnect",
+};
 
 export default function FreelancingPage() {
   return (
@@ -15,14 +21,14 @@ export default function FreelancingPage() {
           <p className="text-lg md:text-xl mb-8 opacity-90">
             Work with talented freelancers from around the world on your terms.
           </p>
-          <div className="relative max-w-xl mx-auto">
+          <div className="relative max-w-2xl text-lg mx-auto">
             <input
               type="text"
               placeholder="Search for services (e.g., 'web design', 'content writing')"
-              className="w-full py-3 pl-12 pr-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400"
+              className="w-full py-3 pl-12 pr-4 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-purple-400"
             />
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" size={20} />
-            <button className="absolute right-2 top-1/2 -translate-y-1/2 bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition-colors">
+            <button className="absolute right-13 top-1/2 -translate-y-1/2 bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition-colors">
               Search
             </button>
           </div>
@@ -30,52 +36,13 @@ export default function FreelancingPage() {
       </section>
 
       <section className="py-16 px-6 md:px-10 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Popular Services</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Web Development"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Web Development</h3>
-              <p className="text-gray-600">Build stunning websites and web applications.</p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Graphic Design"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Graphic Design</h3>
-              <p className="text-gray-600">Create captivating visuals for your brand.</p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Content Writing"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Content Writing</h3>
-              <p className="text-gray-600">Engaging content that drives results.</p>
-            </div>
-            <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Digital Marketing"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Digital Marketing</h3>
-              <p className="text-gray-600">Boost your online presence and reach.</p>
-            </div>
-          </div>
-        </div>
+                  <h2 className="text-3xl font-bold text-center mb-12 text-purple-800">Popular Services</h2>
+        <Services/>
       </section>
 
       <section className="py-16 px-6 md:px-10 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">How It Works</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-purple-800">How It Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-6 rounded-lg">
               <Briefcase className="mx-auto mb-4 text-purple-700" size={48} />
@@ -102,7 +69,7 @@ export default function FreelancingPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
               <img
-                src="/placeholder.svg?height=120&width=120"
+                src="https://plus.unsplash.com/premium_photo-1664476788423-7899ac87bd7f?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Freelancer 1"
                 className="mx-auto mb-4 rounded-full w-32 h-32 object-cover"
               />
@@ -117,7 +84,7 @@ export default function FreelancingPage() {
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
               <img
-                src="/placeholder.svg?height=120&width=120"
+                src="https://plus.unsplash.com/premium_photo-1682437831693-924c14450271?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Freelancer 2"
                 className="mx-auto mb-4 rounded-full w-32 h-32 object-cover"
               />
@@ -130,7 +97,7 @@ export default function FreelancingPage() {
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
               <img
-                src="/placeholder.svg?height=120&width=120"
+                src="https://plus.unsplash.com/premium_photo-1670884441012-c5cf195c062a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Freelancer 3"
                 className="mx-auto mb-4 rounded-full w-32 h-32 object-cover"
               />

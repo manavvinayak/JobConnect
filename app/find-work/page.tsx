@@ -1,6 +1,12 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { Services} from "@/components/services"
 import { Search, Lightbulb, Rocket } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Find Work ",
+};
 
 export default function FindWorkPage() {
   return (
@@ -15,7 +21,7 @@ export default function FindWorkPage() {
           <p className="text-lg md:text-xl mb-8 opacity-90">
             Discover thousands of projects from clients worldwide and grow your freelance career.
           </p>
-          <div className="relative max-w-xl mx-auto">
+          <div className="relative max-w-xl mx-auto ">
             <input
               type="text"
               placeholder="Search for jobs (e.g., 'React developer', 'logo design project')"
@@ -31,7 +37,7 @@ export default function FindWorkPage() {
 
       <section className="py-16 px-6 md:px-10 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">How to Get Work on FreelanceConnect</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">How to Get Work on JobConnect</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-6 rounded-lg">
               <Lightbulb className="mx-auto mb-4 text-purple-700" size={48} />
@@ -54,45 +60,8 @@ export default function FindWorkPage() {
 
       <section className="py-16 px-6 md:px-10 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Browse Jobs by Category</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Development & IT"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Development & IT</h3>
-              <p className="text-gray-600">Web, mobile, software, and more.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Design & Creative"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Design & Creative</h3>
-              <p className="text-gray-600">Graphic, UI/UX, video, animation.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Writing & Translation"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Writing & Translation</h3>
-              <p className="text-gray-600">Content, copywriting, localization.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Sales & Marketing"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Sales & Marketing</h3>
-              <p className="text-gray-600">Digital, lead gen, e-commerce.</p>
-            </div>
-          </div>
+          <h2 className="text-3xl font-bold text-center mb-12 text-purple-800">Browse Jobs by Category</h2>
+           < Services />
         </div>
       </section>
 

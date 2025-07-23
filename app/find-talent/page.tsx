@@ -1,6 +1,12 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { Services } from "@/components/services"
 import { Search, Briefcase, Users, Star, CheckCircle } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Find Talent ",
+};
 
 export default function FindTalentPage() {
   return (
@@ -31,7 +37,7 @@ export default function FindTalentPage() {
 
       <section className="py-16 px-6 md:px-10 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">How to Hire on FreelanceConnect</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">How to Hire on JobConnect</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="p-6 rounded-lg">
               <Briefcase className="mx-auto mb-4 text-purple-700" size={48} />
@@ -54,45 +60,8 @@ export default function FindTalentPage() {
 
       <section className="py-16 px-6 md:px-10 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Browse Talent by Category</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Web Development"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Web Developers</h3>
-              <p className="text-gray-600">Frontend, Backend, Fullstack experts.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Graphic Design"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Graphic Designers</h3>
-              <p className="text-gray-600">Logos, branding, UI/UX design.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Content Writing"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Content Writers</h3>
-              <p className="text-gray-600">Articles, blogs, copywriting, SEO.</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
-              <img
-                src="/placeholder.svg?height=80&width=80"
-                alt="Digital Marketing"
-                className="mx-auto mb-4 w-20 h-20 object-contain"
-              />
-              <h3 className="text-xl font-semibold mb-2">Digital Marketers</h3>
-              <p className="text-gray-600">SEO, SEM, social media, email marketing.</p>
-            </div>
-          </div>
+          <h2 className="text-3xl font-bold text-center mb-12 text-purple-800">Browse Talent by Category</h2>
+          < Services />
         </div>
       </section>
 
@@ -102,7 +71,7 @@ export default function FindTalentPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
               <img
-                src="/placeholder.svg?height=120&width=120"
+                src="https://plus.unsplash.com/premium_photo-1670884441229-5e9a711244f1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Freelancer 1"
                 className="mx-auto mb-4 rounded-full w-32 h-32 object-cover"
               />
@@ -125,7 +94,7 @@ export default function FindTalentPage() {
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
               <img
-                src="/placeholder.svg?height=120&width=120"
+                src="https://images.unsplash.com/photo-1641260783083-a0af6cf964ca?q=80&w=1092&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Freelancer 2"
                 className="mx-auto mb-4 rounded-full w-32 h-32 object-cover"
               />
@@ -148,7 +117,7 @@ export default function FindTalentPage() {
             </div>
             <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow duration-300">
               <img
-                src="/placeholder.svg?height=120&width=120"
+                src="https://images.unsplash.com/photo-1573165850883-9b0e18c44bd2?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Freelancer 3"
                 className="mx-auto mb-4 rounded-full w-32 h-32 object-cover"
               />
